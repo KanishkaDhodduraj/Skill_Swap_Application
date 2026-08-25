@@ -1,0 +1,378 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f7ff;
+    color: #222;
+    line-height: 1.6;
+}
+
+header {
+    background-color: white;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+nav {
+    max-width: 1100px;
+    margin: auto;
+    padding: 18px 30px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav > a {
+    text-decoration: none;
+    color: #5b3cc4;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav div {
+    display: flex;
+    gap: 25px;
+}
+
+nav div a {
+    text-decoration: none;
+    color: #333;
+    font-size: 15px;
+}
+
+nav div a:hover {
+    color: #5b3cc4;
+}
+
+.hero {
+    min-height: 550px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.hero-content {
+    max-width: 750px;
+}
+
+.tagline {
+    color: #5b3cc4;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+.hero h1 {
+    font-size: 64px;
+    line-height: 1.1;
+    margin-bottom: 25px;
+}
+
+.hero-content > p:not(.tagline) {
+    color: #666;
+    font-size: 18px;
+    max-width: 600px;
+    margin: 0 auto 30px;
+}
+
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.hero-buttons a {
+    text-decoration: none;
+    padding: 13px 24px;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.hero-buttons a:first-child {
+    background-color: #5b3cc4;
+    color: white;
+}
+
+.hero-buttons a:last-child {
+    border: 1px solid #5b3cc4;
+    color: #5b3cc4;
+}
+
+.hero-buttons a:hover {
+    transform: translateY(-3px);
+}
+
+.how-it-works {
+    max-width: 1100px;
+    margin: auto;
+    padding: 70px 30px;
+}
+
+.section-heading {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.section-heading p {
+    color: #5b3cc4;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.section-heading h2 {
+    font-size: 36px;
+}
+
+.steps {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.step-card {
+    background-color: white;
+    padding: 30px;
+    border: 1px solid #e5e5e5;
+    border-radius: 12px;
+
+    transition: 0.3s;
+}
+
+.step-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+.step-card span {
+    color: #5b3cc4;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.step-card h3 {
+    margin: 10px 0;
+    font-size: 22px;
+}
+
+.step-card p {
+    color: #666;
+}
+
+footer {
+    text-align: center;
+    padding: 25px;
+    background-color: #222;
+    color: white;
+}
+
+
+@media (max-width: 768px) {
+
+    nav {
+        flex-direction: column;
+        gap: 15px;
+
+    }
+
+    nav div {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero h1 {
+        font-size: 45px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .steps {
+        grid-template-columns: 1fr;
+    }
+}
+
+/*Explore*/
+
+.explore-header {
+    text-align: center;
+    padding: 70px 20px 40px;
+}
+
+.explore-header h1 {
+    font-size: 48px;
+    margin: 10px 0;
+}
+
+.explore-header > p:last-child {
+    color: #666;
+}
+
+.categories {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
+    padding: 10px 20px 40px;
+}
+
+.categories button {
+    border: 1px solid #ddd;
+    background-color: white;
+    padding: 10px 18px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.categories button:first-child,
+.categories button:hover {
+    background-color: #5b3cc4;
+    color: white;
+    border-color: #5b3cc4;
+}
+
+.student-section {
+    max-width: 1100px;
+    margin: auto;
+    padding: 20px 30px 80px;
+}
+
+.student-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.student-card {
+    display: flex;
+    gap: 25px;
+
+    background-color: white;
+    border: 1px solid #e5e5e5;
+    border-radius: 15px;
+
+    padding: 25px;
+
+    transition: 0.3s;
+}
+
+.student-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+.student-image {
+    min-width: 90px;
+    height: 90px;
+
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #e8e2ff;
+    color: #5b3cc4;
+
+    font-size: 24px;
+    font-weight: bold;
+}
+.student-info {
+    flex: 1;
+}
+
+.student-info h2 {
+    font-size: 22px;
+}
+
+.student-course {
+    color: #777;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.student-info h3 {
+    font-size: 13px;
+    margin-top: 12px;
+    margin-bottom: 7px;
+    color: #555;
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 7px;
+}
+
+.skills span {
+    background-color: #f0edff;
+    color: #5b3cc4;
+    padding: 5px 10px;
+    border-radius: 15px;
+    font-size: 12px;
+}
+
+.skills.wanted span {
+    background-color: #fff3d6;
+    color: #9a6800;
+}
+.profile-button {
+    display: inline-block;
+
+    margin-top: 20px;
+
+    text-decoration: none;
+
+    background-color: #5b3cc4;
+    color: white;
+
+    padding: 9px 16px;
+
+    border-radius: 7px;
+
+    font-size: 13px;
+
+    transition: 0.3s;
+}
+
+.profile-button:hover {
+    transform: translateY(-2px);
+}
+
+@media (max-width: 850px) {
+
+    .student-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .student-card {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .skills {
+        justify-content: center;
+    }
+
+    .explore-header h1 {
+        font-size: 38px;
+    }
+}
