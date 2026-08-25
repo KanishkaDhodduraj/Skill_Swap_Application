@@ -591,3 +591,163 @@ footer {
         text-align: center;
     }
 }
+
+.exchange-header {
+    text-align: center;
+    padding: 70px 20px 40px;
+}
+
+.exchange-header h1 {
+    font-size: 48px;
+    margin: 10px 0;
+}
+
+.exchange-header > p:last-child {
+    color: #666;
+}
+
+.exchange-container {
+    max-width: 850px;
+    margin: auto;
+    padding: 20px 30px 80px;
+}
+
+.exchange-form {
+    background-color: white;
+    border: 1px solid #e5e5e5;
+    border-radius: 15px;
+    padding: 35px;
+}
+
+.form-section {
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #eee;
+}
+
+.form-section:last-of-type {
+    border-bottom: none;
+    margin-bottom: 0;
+}
+
+.form-section h2 {
+    font-size: 21px;
+    margin-bottom: 20px;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 12px 14px;
+    border: 1px solid #d9d9d9;
+    border-radius: 8px;
+    font-family: inherit;
+    font-size: 14px;
+    background-color: white;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #5b3cc4;
+    box-shadow: 0 0 0 3px #e8e2ff;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.radio-group {
+    display: flex;
+    gap: 25px;
+}
+
+.radio-group label {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    font-weight: normal;
+}
+
+.radio-group input {
+    accent-color: #5b3cc4;
+}
+
+.form-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 12px;
+}
+
+.form-actions button {
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.reset-button {
+    background-color: white;
+    border: 1px solid #ccc;
+    color: #555;
+}
+
+.submit-button {
+    background-color: #5b3cc4;
+    border: 1px solid #5b3cc4;
+    color: white;
+}
+
+.form-actions button:hover {
+    transform: translateY(-2px);
+}
+
+@media (max-width: 650px) {
+    .exchange-header h1 {
+        font-size: 38px;
+    }
+
+    .exchange-form {
+        padding: 25px 20px;
+    }
+
+    .form-grid {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    .radio-group {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .form-actions {
+        flex-direction: column;
+    }
+
+    .form-actions button {
+        width: 100%;
+    }
+}

@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Skill Exchange | SkillSwap</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header>
+    <nav>
+        <a href="index.html">SkillSwap</a>
+
+        <div>
+            <a href="index.html">Home</a>
+            <a href="explore.html">Explore</a>
+            <a href="profile.html">Profiles</a>
+            <a href="exchange.html">Exchange</a>
+        </div>
+    </nav>
+</header>
+
+
+<main>
+
+    <section class="exchange-header">
+
+        <p class="tagline">SKILL EXCHANGE</p>
+
+        <h1>Start an Exchange</h1>
+
+        <p>
+            Tell us what you can share and what you would like to learn.
+        </p>
+
+    </section>
+
+
+    <section class="exchange-container">
+
+        <form class="exchange-form">
+
+            <div class="form-section">
+
+                <h2>Your Information</h2>
+
+                <div class="form-grid">
+
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input
+                                type="text"
+                                id="name"
+                                name="name"
+                                placeholder="Enter your name"
+                                required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input
+                                type="email"
+                                id="email"
+                                name="email"
+                                placeholder="Enter your email"
+                                required>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="form-section">
+
+                <h2>Skill Exchange</h2>
+
+                <div class="form-grid">
+
+                    <div class="form-group">
+
+                        <label for="teach">
+                            Skill You Can Share
+                        </label>
+
+                        <select id="teach" name="teach">
+
+                            <option value="">
+                                Select a skill
+                            </option>
+
+                            <option>Java</option>
+                            <option>HTML & CSS</option>
+                            <option>Python</option>
+                            <option>JavaScript</option>
+                            <option>UI/UX Design</option>
+                            <option>Figma</option>
+                            <option>Communication</option>
+
+                        </select>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="learn">
+                            Skill You Want to Learn
+                        </label>
+
+                        <select id="learn" name="learn">
+
+                            <option value="">
+                                Select a skill
+                            </option>
+
+                            <option>Java</option>
+                            <option>HTML & CSS</option>
+                            <option>Python</option>
+                            <option>JavaScript</option>
+                            <option>UI/UX Design</option>
+                            <option>Figma</option>
+                            <option>Communication</option>
+
+                        </select>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="form-section">
+
+                <h2>Session Details</h2>
+
+                <div class="form-grid">
+
+                    <div class="form-group">
+
+                        <label for="date">Preferred Date</label>
+
+                        <input
+                                type="date"
+                                id="date"
+                                name="date">
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="time">Preferred Time</label>
+
+                        <input
+                                type="time"
+                                id="time"
+                                name="time">
+
+                    </div>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label>Learning Mode</label>
+
+                    <div class="radio-group">
+
+                        <label>
+                            <input
+                                    type="radio"
+                                    name="mode"
+                                    value="online">
+                            Online
+                        </label>
+
+                        <label>
+                            <input
+                                    type="radio"
+                                    name="mode"
+                                    value="offline">
+                            Offline
+                        </label>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="form-section">
+
+                <h2>Additional Message</h2>
+
+                <div class="form-group">
+
+                    <label for="message">
+                        Tell your learning partner something
+                    </label>
+
+                    <textarea
+                            id="message"
+                            name="message"
+                            rows="5"
+                            placeholder="Write your message here..."></textarea>
+
+                </div>
+
+            </div>
+
+
+            <div class="form-actions">
+
+                <button type="reset" class="reset-button">
+                    Clear
+                </button>
+
+                <button type="submit" class="submit-button">
+                    Send Exchange Request
+                </button>
+
+            </div>
+
+        </form>
+
+    </section>
+
+</main>
+
+
+<footer>
+    <p>&copy; 2026 SkillSwap. Share a Skill. Learn a Skill.</p>
+</footer>
+
+</body>
+</html>
